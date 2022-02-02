@@ -48,12 +48,14 @@ Grays
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* Re-usables */
@@ -90,6 +92,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #fdf2e9;
+  position: relative;
 
   /* Because we want a stiky nav, we better do fixed height */
   height: 9.6rem;
@@ -106,6 +109,23 @@ strong {
 }
 .center-text {
   text-align: center;
+}
+/* BTN mobile nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 /* NAVIGATION */
 .main-nav-list {
